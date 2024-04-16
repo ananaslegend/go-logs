@@ -2,7 +2,7 @@
 Utils for better logging using default slog.Logger and context.Context.
 
 ```bash
-go get -u github.com/ananaslegend/go-logs
+go get -u github.com/ananaslegend/go-logs/v2
 ```
 
 Example of using the logs package:
