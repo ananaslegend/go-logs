@@ -5,7 +5,7 @@ import (
 	"log/slog"
 )
 
-func WithLogMetric(ctx context.Context, metricName string, msg any) context.Context {
+func WithMetric(ctx context.Context, metricName string, msg any) context.Context {
 	if c, ok := ctx.Value(key{}).(logCtx); ok {
 		c[metricName] = msg
 
