@@ -1,7 +1,9 @@
 # go-logs 
 Utils for better logging using default slog.Logger and context.Context.
 
-`go get -u github.com/ananaslegend/go-logs`
+```bash
+go get -u github.com/ananaslegend/go-logs
+```
 
 Example of using the logs package:
 ```go
