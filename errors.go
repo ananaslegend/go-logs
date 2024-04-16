@@ -3,6 +3,7 @@ package logs
 import (
 	"context"
 	"errors"
+	"log/slog"
 )
 
 func WrapError(ctx context.Context, err error) error {
@@ -24,6 +25,11 @@ func ErrorCtx(ctx context.Context, err error) context.Context {
 	}
 
 	return ctx
+}
+
+func ErrorMsg(err error) slog.Attr {
+	return slog.String("error", err.Error())
+
 }
 
 type errorWithLogCtx struct {
